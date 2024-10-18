@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="../data/Chill-Ukulele-And-Acoustic-Guitar(chosic.com).mp3" type="audio/mpeg">
+    </audio>
+    <video id="backgroundVideo" autoplay muted loop>
+        <source src="../data/backgroundvideo.mp4" type="video/mp4">
+    </video>
+
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="button-container">
+            <button class="choice rock js-button" value="✊🏾Rock">✊🏾Rock</button>
+            <button class="choice paper js-button" value="🤚🏾Paper">🤚🏾Paper</button>
+            <button class="choice scissors js-button" value="✌🏾 Scissors">✌🏾️ Scissors</button>
+        </div>
+        <div class="result">
+            <h2 id="resultText">Make your choice!</h2>
+        </div>
+        <h3 class="js-playerMove">Your Move : </h3>
+        <h3 class="js-computerMove">Computer's Move : </h3>
+        <h3 class="js-results"> Wins : 0 Draw : 0 Loss : 0 </h3>
+        <button class="Reset-button js-reset"> Reset</button>
+    </div>
+    
+    <div class="button-area">
+        <button class="icon-button" id="muteButton">
+            <i class="fa-solid fa-volume-off" id="volumeIcon"></i>
+        </button>
+        
+    </div>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
