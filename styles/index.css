@@ -9,7 +9,7 @@ body {
     justify-content: center;
     height: 100vh;
     color: #333;
-    background-image :url(data\wallpaper.jpg);
+    background-image :url(data/wallpaper.jpg);
     background-size: cover;
 }
 
